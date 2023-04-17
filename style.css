@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
+}
+header {
+  background-color: #06283d;
+  position: fixed;
+  right: 0;
+  left: 0;
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 99;
+}
+header h1 {
+  margin-left: 20px;
+}
+.jumbotron {
+  height: 450px;
+  background-color: #06283d;
+  color: #fff;
+  text-align: center;
+}
+.jumbotron h1 {
+  font-size: 50px;
+  padding-top: 190px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.letsgo {
+  text-decoration: none;
+  display: inline-block;
+  color: red;
+  margin: auto;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 13px 25px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1.5px solid red;
+  transition: 1s;
+}
+.letsgo:hover {
+  cursor: pointer;
+  background-color: red;
+  color: #fff;
+  transition: 0.5s;
+}
+.judul h2 {
+  font-size: 35px;
+  color: #256d85;
+  margin: auto;
+  padding-bottom: 10px;
+}
+.judul h3 {
+  font-size: 25px;
+  color: #256d85;
+  padding-left: 20px;
+}
+.flex-container-row p {
+  font-size: 18px;
+  color: #256d85;
+  margin: 15px 15px;
+  padding: 0 20px;
+}
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+
+.flex-container-row {
+  display: flex;
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+footer {
+  background-color: #06283d;
+  text-align: center;
+  padding: 10px;
+  margin-top: 15px;
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 1.5em;
+  }
+  .jumbotron h1 {
+    padding-top: 120px;
+  }
+  .flex-container-row {
+    flex-direction: column;
+  }
+}
